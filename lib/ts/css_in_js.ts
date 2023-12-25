@@ -87,7 +87,11 @@ type CSSPseudoElementSelector =
 
 type CSSSelector = CSSBaseSelector | CSSPseudoClassSelector | CSSPseudoElementSelector
 
+type CSSVariate = { [P: `--${string}`]: string }
+
 export type CSSInJS = Record<
     string,
-    Partial<CSSStyleDeclaration> & Partial<Record<CSSSelector, Partial<CSSStyleDeclaration>>>
+    Partial<CSSStyleDeclaration> &
+        CSSVariate &
+        Partial<Record<CSSSelector, Partial<CSSStyleDeclaration>>>
 >
