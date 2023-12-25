@@ -1,3 +1,11 @@
+export function hasProp(input: object | Function, name: string | number | symbol): boolean {
+    if (input && name && (typeof input == 'object' || typeof input == 'function')) {
+        return Object.prototype.hasOwnProperty.call(input, name)
+    } else {
+        return false
+    }
+}
+
 /**
  * @example
  * range(4) // [0, 1, 2, 3]
