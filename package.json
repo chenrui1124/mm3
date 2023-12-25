@@ -1,6 +1,6 @@
 {
     "name": "mm3",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "type": "module",
     "main": "./dist/mm3.js",
     "types": "./dist/mm3.d.ts",
@@ -33,6 +33,7 @@
         "typescript": "^5.3.3",
         "vite": "^5.0.10",
         "vite-plugin-dts": "^3.6.4",
-        "vitest": "^1.1.0"
+        "vitest": "^1.1.0",
+        "vue": "^3.3.13"
     }
 }
