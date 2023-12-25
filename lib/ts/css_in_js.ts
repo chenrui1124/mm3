@@ -85,8 +85,9 @@ type CSSPseudoElementSelector =
     | '&::spelling-error'
     | '&::target-text'
 
+type CSSSelector = CSSBaseSelector | CSSPseudoClassSelector | CSSPseudoElementSelector
+
 export type CSSInJS = Record<
-    CSSBaseSelector | CSSPseudoClassSelector | CSSPseudoElementSelector,
-    Partial<CSSStyleDeclaration>
-> &
-    Partial<CSSStyleDeclaration>
+    string,
+    Partial<CSSStyleDeclaration> & Partial<Record<CSSSelector, Partial<CSSStyleDeclaration>>>
+>
