@@ -1,0 +1,38 @@
+{
+    "name": "mm3",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "./dist/mm3.js",
+    "types": "./dist/mm3.d.ts",
+    "scripts": {
+        "build": "tsc && vite build",
+        "test": "vitest --ui"
+    },
+    "files": [
+        "dist"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "Util",
+        "Module"
+    ],
+    "prettier": {
+        "bracketSameLine": false,
+        "jsxSingleQuote": true,
+        "printWidth": 100,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "none",
+        "arrowParens": "avoid"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.5",
+        "@vitest/ui": "^1.1.0",
+        "prettier": "^3.1.1",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.10",
+        "vite-plugin-dts": "^3.6.4",
+        "vitest": "^1.1.0"
+    }
+}
