@@ -1,6 +1,6 @@
 {
     "name": "mm3",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "module",
     "main": "./dist/mm3.js",
     "types": "./dist/mm3.d.ts",
