@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { themeReducer } from '~'
+import { themeReducer } from '@lib'
 
 describe('themeReducer', () => {
     it('output object', () => {
