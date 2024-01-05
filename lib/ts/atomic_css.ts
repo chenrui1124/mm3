@@ -1,3 +1,6 @@
+/*
+ * CSSInJS
+ */
 type CSSBaseSelector =
     | `& ${string}`
     | `&>${string}`
@@ -95,3 +98,30 @@ export type CSSInJS = Record<
         CSSVariate &
         Partial<Record<CSSSelector, Partial<CSSStyleDeclaration>>>
 >
+
+/*
+ * PureCSSIconClassName
+ */
+export type PureCSSIconClassName =
+    /*
+     * unocss | @egoist/tailwindcss-icons
+     * <prefix>-<pkg>-<name>
+     */
+    | `${string}-${string}-${string}`
+    /*
+     * unocss
+     * <prefix>-<pkg>:<name>
+     */
+    | `${string}-${string}:${string}`
+    /*
+     * @iconify/tailwind - addDynamicIconSelectors
+     * <prefix>-[<pkg>--<name>]
+     */
+    | `${string}-[${string}--${string}]`
+    /*
+     * @iconify/tailwind - addCleanIconSelectors
+     * icon--<pkg>
+     * icon--<pkg>-<name>
+     */
+    | `icon--${string}`
+    | `icon--${string}--${string}`
