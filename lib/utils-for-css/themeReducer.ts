@@ -9,7 +9,9 @@ export function themeReducer<I extends number | string, O>(
     [p in I]: O
 } {
     return propNamesArray.reduce((result: any, value: I) => {
-        result[value] = handler(value)
+        if (['string', 'number', 'symbol'].includes(typeof value)) result[value] = handler(value)
+        else throw new Error('Invalid Property Name.')
+
         return result
     }, {})
 }

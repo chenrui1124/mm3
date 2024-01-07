@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { themeReducer } from '@lib'
+import { themeReducer } from './themeReducer'
 
 describe('themeReducer', () => {
     it('output object', () => {
@@ -8,6 +8,6 @@ describe('themeReducer', () => {
 
     it('throws error', () => {
         // @ts-expect-error
-        expect(themeReducer([null, null], v => '')).toThrowError()
+        expect(() => themeReducer([null, null], v => '')).toThrowError(/Invalid/)
     })
 })
