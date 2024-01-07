@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { lorem } from '@lib'
+import { lorem } from './lorem'
 
 describe('lorem', () => {
     it('return English text', () => {

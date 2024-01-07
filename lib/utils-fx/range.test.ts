@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { range } from '@lib'
+import { range } from './range'
 
 describe('range', () => {
     it('has 1 argument - stop', () => {

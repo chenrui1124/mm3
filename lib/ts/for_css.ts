@@ -1,3 +1,5 @@
+import type { HTMLAttributes } from 'vue'
+
 /*
  * CSSInJS
  */
@@ -91,6 +93,8 @@ type CSSPseudoElementSelector =
 type CSSSelector = CSSBaseSelector | CSSPseudoClassSelector | CSSPseudoElementSelector
 
 type CSSVariate = { [P: `--${string}`]: string }
+
+type CSSAttributes = Partial<CSSStyleDeclaration & HTMLAttributes['style']>
 
 export type CSSInJS = Record<
     string,

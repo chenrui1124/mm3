@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { hasProp } from '@lib'
+import { hasProp } from './hasProp'
 
 describe('hasProps', () => {
     it('is true', () => {

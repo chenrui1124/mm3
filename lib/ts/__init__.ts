@@ -1,7 +1,8 @@
 /*
  * Atomic CSS
  */
-export type { CSSInJS, PureCSSIconClassName } from './atomic_css'
+export type { CSSInJS, PureCSSIconClassName } from './for_css'
+
 /*
  * Utils
  */
