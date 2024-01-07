@@ -6,8 +6,8 @@
         "lib": ["ES2020", "DOM", "DOM.Iterable"],
         "baseUrl": ".",
         "paths": {
-            "@lib/*": ["./lib/*"],
-            "@lib": ["./lib/index.ts"]
+            "@/*": ["./lib/*"],
+            "@": ["./lib/index.ts"]
         },
         "skipLibCheck": true,
         "types": ["vite/client"],

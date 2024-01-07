@@ -17,11 +17,11 @@ export default defineConfig({
     ],
 
     resolve: {
-        alias: { '@lib': fileURLToPath(new URL('.', import.meta.url)) }
+        alias: { '@': fileURLToPath(new URL('./lib', import.meta.url)) }
     },
 
     test: {
-        alias: { '@lib': new URL('./lib/index.ts', import.meta.url).pathname }
+        alias: { '@': new URL('./lib/index.ts', import.meta.url).pathname }
     },
 
     build: {

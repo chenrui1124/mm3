@@ -1,4 +1,4 @@
-import { toBase26 } from '@lib'
+import { toBase26 } from '@'
 
 /**
  * Create a auto-incremented letter index.
