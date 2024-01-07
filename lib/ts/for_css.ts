@@ -94,13 +94,11 @@ type CSSSelector = CSSBaseSelector | CSSPseudoClassSelector | CSSPseudoElementSe
 
 type CSSVariate = { [P: `--${string}`]: string }
 
-type CSSAttributes = Partial<CSSStyleDeclaration & HTMLAttributes['style']>
-
 export type CSSInJS = Record<
     string,
-    Partial<CSSStyleDeclaration> &
+    Partial<HTMLAttributes['style']> &
         CSSVariate &
-        Partial<Record<CSSSelector, Partial<CSSStyleDeclaration>>>
+        Partial<Record<CSSSelector, Partial<HTMLAttributes['style']>>>
 >
 
 /*
